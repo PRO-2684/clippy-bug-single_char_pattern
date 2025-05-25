@@ -11,6 +11,7 @@ fn main() -> Result<(), ParseIntError> {
 }
 
 fn time_to_seconds(time: &str) -> Result<u32, ParseIntError> {
+    // Note that we've forced the type to be `Split<'_, &str>`
     let mut parts: Split<'_, &str> = time.split(":");
 
     let hours = parts.next().map_or(Ok(0), str::parse)?;
