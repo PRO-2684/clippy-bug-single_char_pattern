@@ -1,6 +1,6 @@
 # Clippy bug `single_char_pattern`
 
-This repo showcases a bug in Clippy, specifically the `single_char_pattern` lint. To reproduce the issue:
+This repo showcases a bug in Clippy, specifically the `single_char_pattern` lint. See rust-lang/rust-clippy#14893. To reproduce the issue:
 
 1. Clone the repository.
 2. This bug is confirmed on Rust toolchain `1.89.0-nightly (68db37499 2025-05-22)`, so use this version, or the bug might have been fixed. Replace `+nightly` in following commands as appropriate.
